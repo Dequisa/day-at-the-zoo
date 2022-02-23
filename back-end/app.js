@@ -9,6 +9,7 @@ var corsOptions = {
   ],
 };
 
+app.use(express.json()); // returns middleware that only parses JSON
 app.use(cors(corsOptions));
 
 app.get("/", (request, response) => {
