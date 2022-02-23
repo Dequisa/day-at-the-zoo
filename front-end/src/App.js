@@ -10,7 +10,8 @@ function App() {
   useEffect(() => {
     const accessServer = async () => {
       try {
-        const res = await axios.get("http://localhost:3001");
+        const res = await axios.get("https://zoo-planner.herokuapp.com/");
+        // const res = await axios.get("http://localhost:3001");
         setReply(res.data);
       } catch (err) {
         console.log("Error Returned from acessServer Request: ", err);
