@@ -5,7 +5,7 @@ const cors = require("cors");
 var corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://agitated-visvesvaraya-323d67.netlify.app/",
+    "https://agitated-visvesvaraya-323d67.netlify.app",
   ],
 };
 
