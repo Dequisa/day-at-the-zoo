@@ -1,0 +1,5 @@
+.MainPage {
+  display: flex;
+  border: 2px red solid;
+  flex-flow: colum wrap;
+}

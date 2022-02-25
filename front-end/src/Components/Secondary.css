@@ -1,0 +1,14 @@
+.Secondary {
+  display: flex;
+  align-items: center;
+  border: 3px red solid;
+  justify-content: space-evenly;
+}
+
+.schedule {
+  border: 12px solid black;
+}
+
+.schedule li {
+  display: inline-block;
+}
