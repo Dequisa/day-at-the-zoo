@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,15 +9,16 @@ import axios from "axios";
 import MainPage from "./Pages/MainPage";
 import SecondaryPage from "./Pages/SecondaryPage";
 
+axios.defaults.withCredentials = true;
+
 function App() {
   const [reply, setReply] = useState("");
 
   useEffect(() => {
     const accessServer = async () => {
       try {
-        const res = await axios.get("https://zoo-planner.herokuapp.com");
-        // const res = await axios.get("http://localhost:3001");
-        setReply(res.data);
+        // const res = await axios.get("https://zoo-planner.herokuapp.com");
+        const res = await axios.get("http://localhost:3001");
       } catch (err) {
         console.log("Error Returned from acessServer Request: ", err);
       }

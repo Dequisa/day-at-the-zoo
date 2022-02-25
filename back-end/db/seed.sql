@@ -1,5 +1,5 @@
 
--- \c zoo_animals
+\c zoo_animals
 
 INSERT INTO animals (name, location, img)
 VALUES(

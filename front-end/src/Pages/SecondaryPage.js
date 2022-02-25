@@ -1,4 +1,4 @@
-import Secondary from "../Components/Secondary.js";
+import Secondary from "../Components/Secondary";
 
 function SecondaryPage() {
   return (
