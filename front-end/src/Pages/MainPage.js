@@ -1,7 +1,6 @@
 import Main from "../Components/Main";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Secondary from "../Components/Secondary";
 
 function MainPage() {
   const [animals, setAnimals] = useState("");

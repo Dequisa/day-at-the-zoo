@@ -9,6 +9,19 @@ const fetchAnimals = async () => {
   }
 };
 
+const fetchAnimalById = async (animals_id) => {
+  try {
+    const animal = await db.one(
+      "SELECT * FROM animals WHERE animals_id=$1",
+      animals_id
+    );
+    return animal;
+  } catch (err) {
+    return err;
+  }
+};
+
 module.exports = {
   fetchAnimals,
+  fetchAnimalById,
 };

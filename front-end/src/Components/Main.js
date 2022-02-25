@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import "./Main.css";
 
 function Main({ id, name, location, img }) {
-  const handleClick = (e) => {
-    e.preventDefault();
-  };
   return (
     <div className="Main">
       <Link to={`/${id}`}>
