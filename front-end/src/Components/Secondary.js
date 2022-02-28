@@ -39,52 +39,52 @@ function Secondary() {
 
       <div className="schedule">
         <h2>Your Schedule</h2>
-        <li> 9:00am</li>
+        <div> 9:00am</div>
+        <div onClick={handleUpdate}>
+          {visit ? <div>{visit}</div> : <button>Update</button>}
+        </div>
+        <button onClick={handleDelete}>Delete</button>
+        <div>10:00am</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>10:00am</li>
+        <div>11:00am</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>11:00am</li>
+        <div>12:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>12:00pm</li>
+        <div>1:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>1:00pm</li>
+        <div>2:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>2:00pm</li>
+        <div>3:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>3:00pm</li>
+        <div>4:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>4:00pm</li>
+        <div>5:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>
         <button onClick={handleDelete}>Delete</button>
-        <li>5:00pm</li>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
-        <button onClick={handleDelete}>Delete</button>
-        <li>6:00pm</li>
+        <div>6:00pm</div>
         <div onClick={handleUpdate}>
           {visit ? <h5>{visit}</h5> : <button>Update</button>}
         </div>

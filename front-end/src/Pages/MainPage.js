@@ -8,11 +8,10 @@ function MainPage() {
   useEffect(() => {
     const accessAnimals = async () => {
       try {
-        // const res = await axios
-        //   .get
-        //   "https://zoo-planner.herokuapp.com/animals"
-        //   ();
-        const res = await axios.get("http://localhost:3001/animals");
+        const res = await axios.get(
+          "https://zoo-planner.herokuapp.com/animals"
+        );
+        // const res = await axios.get("http://localhost:3001/animals");
         setAnimals(res.data);
       } catch (err) {
         console.log("Error Returned from acessAnimals Request: ", err);
