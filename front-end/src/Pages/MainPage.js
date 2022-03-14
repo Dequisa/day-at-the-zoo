@@ -25,7 +25,7 @@ function MainPage() {
       {animals &&
         animals.map((animal) => {
           return (
-            <div>
+            <div key={animal.animals_id}>
               <Main
                 id={animal.animals_id}
                 name={animal.name}

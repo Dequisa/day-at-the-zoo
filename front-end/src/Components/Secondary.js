@@ -13,6 +13,7 @@ function Secondary() {
       try {
         const res = await axios.get(`http://localhost:3001/animals/${id}`);
         setAnimal(res.data);
+        setVisit(res.data.name);
       } catch (err) {
         console.log("Error Returned from Secondary.js animal Get request");
       }
@@ -20,8 +21,10 @@ function Secondary() {
     singleAnimal();
   }, [id]);
 
-  const handleUpdate = () => {
-    setVisit(animal.name);
+  const handleUpdate = (e) => {
+    console.log(e.target.value);
+    e.target.value = visit;
+    // setVisit(animal.name);
   };
   const handleDelete = (e) => {
     setVisit("");
@@ -30,64 +33,44 @@ function Secondary() {
   return (
     <div className="Secondary">
       <div className="thumbnail">
-        <button>
+        <div>
           <img src={animal && animal.img} alt="zoo animal" />
           <div>{animal && animal.name}</div>
           <div>{animal && animal.location}</div>
-        </button>
+        </div>
       </div>
 
       <div className="schedule">
         <h2>Your Schedule</h2>
-        <div> 9:00am</div>
-        <div onClick={handleUpdate}>
-          {visit ? <div>{visit}</div> : <button>Update</button>}
-        </div>
-        <button onClick={handleDelete}>Delete</button>
+        <label htmlFor="9am"> 9:00am</label>
+        <input type="button" value="Update" onClick={handleUpdate} />
+        <input type="button" value="Delete" onClick={handleDelete} />
         <div>10:00am</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>11:00am</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
-        <button onClick={handleDelete}>Delete</button>
+        <input type="button" value="Update" onClick={handleUpdate} />
+        <input type="button" value="delete" onClick={handleDelete} />
         <div>12:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>1:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>2:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>3:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>4:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>5:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
         <div>6:00pm</div>
-        <div onClick={handleUpdate}>
-          {visit ? <h5>{visit}</h5> : <button>Update</button>}
-        </div>
+        <input type="button" value="Update" onClick={handleUpdate} />
         <button onClick={handleDelete}>Delete</button>
       </div>
     </div>
