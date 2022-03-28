@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import gorilla from "../assets/zoogorilla.jpeg";
+// import gorilla from "../assets/zoogorilla.jpeg";
 import logo from "../assets/logo.jpeg";
 import plus2 from "../assets/plus.jpeg";
 import "./Nav.css";
