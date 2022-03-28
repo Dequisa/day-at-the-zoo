@@ -7,7 +7,7 @@ import "./Nav.css";
 function Nav() {
   return (
     <div className="navbar">
-      <img src={logo} />
+      <img src={logo} alt="bronx zoo icon" />
       <input
         className="search"
         value="Search for Zoo Animal"
@@ -22,7 +22,7 @@ function Nav() {
         {" "}
         <Link to={"/1"}>View Schedule </Link>
       </button>
-      <img src={plus2} style={{ width: "3%" }} />
+      <img src={plus2} style={{ width: "3%" }} alt="plus symbol" />
     </div>
   );
 }
