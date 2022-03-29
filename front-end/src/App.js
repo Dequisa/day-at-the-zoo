@@ -6,22 +6,15 @@ import axios from "axios";
 // Pages
 import MainPage from "./Pages/MainPage";
 import SecondaryPage from "./Pages/SecondaryPage";
-import Nav from "./Components/Nav";
+import Nav from "./Navbar/Nav.js";
+import RenderPage from "./AnimalScheduler/Render.js";
 
 axios.defaults.withCredentials = true;
 
 function App() {
   return (
     <div>
-      <Router>
-        <Nav />
-        <main>
-          <Routes>
-            <Route path="/:id" element={<SecondaryPage />}></Route>
-            <Route path="/" element={<MainPage />}></Route>
-          </Routes>
-        </main>
-      </Router>
+      <RenderPage />
     </div>
   );
 }

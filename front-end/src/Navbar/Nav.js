@@ -4,7 +4,7 @@ import logo from "../assets/logo.jpeg";
 import plus2 from "../assets/plus.jpeg";
 import "./Nav.css";
 
-function Nav() {
+function Nav({ animalFilterOnChange }) {
   return (
     <div className="navbar">
       <div>
@@ -15,7 +15,8 @@ function Nav() {
       </div>
       <input
         className="search"
-        value="Search for Zoo Animal"
+        placeholder="Search for Zoo Animal"
+        onChange={animalFilterOnChange}
         type="text"
         unselectable="on"
       ></input>
