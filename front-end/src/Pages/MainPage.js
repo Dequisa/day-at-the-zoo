@@ -1,6 +1,4 @@
 import Main from "../Components/Main";
-import { useState, useEffect } from "react";
-import axios from "axios";
 
 function MainPage({ animals }) {
   return (
